@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/menu_add_2"
+        app:actionLayout="@layout/custem_nutification_item"
+        android:title="add"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_baseline_add_24"
+        />
+
+    <item android:id="@+id/RED"
+        android:title="RED"
+        app:showAsAction="ifRoom"
+
+        android:icon="@drawable/baseline_search_24"/>
+
+    <item android:id="@+id/BLUE"
+        android:title="BLUE"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/blake"
+        android:title="blake"
+        app:showAsAction="never"
+        />
+
+
+</menu>

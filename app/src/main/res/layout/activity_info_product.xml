@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".infoProduct">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="24dp"
+        android:id="@+id/firstCardView"
+        android:layout_height="320dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginTop="24dp"
+        app:cardElevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/imageViewInfo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:scaleType="centerCrop"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageViewInfo"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="18dp"
+                android:textSize="16dp"
+                android:textColor="@color/colorapp"
+                android:textStyle="bold"
+
+                android:id="@+id/textInfo"/>
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              app:layout_constraintTop_toBottomOf="@id/firstCardView"
+              app:layout_constraintStart_toStartOf="parent"
+              android:layout_marginStart="24dp"
+              android:layout_marginTop="50dp"
+              android:textSize="15dp"
+              android:textStyle="bold"
+              android:text="Price :"
+              android:textColor="@color/black"
+              android:id="@+id/price" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/firstCardView"
+        app:layout_constraintStart_toEndOf="@id/price"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="....."
+        android:id="@+id/price2" />
+
+       <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toBottomOf="@id/firstCardView"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginEnd="24dp"
+         android:layout_marginTop="50dp"
+         android:textSize="15dp"
+         android:textStyle="bold"
+         android:text="PS"
+        android:textColor="@color/colorapp"
+        android:id="@+id/ps" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/firstCardView"
+        app:layout_constraintEnd_toStartOf="@id/ps"
+        android:layout_marginEnd="5dp"
+
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="0"
+        android:textColor="@color/colorapp"
+        android:id="@+id/psnumber" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/firstCardView"
+        app:layout_constraintStart_toEndOf="@id/price2"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="$"
+        android:textColor="@color/black"
+        android:id="@+id/price3" />
+
+
+    <TextView
+        android:id="@+id/discraption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="Discraption product :"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/price" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/discraption"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="30dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:text="We wish you to rate the product based on your access ratio."
+        android:id="@+id/discraptionText" />
+
+
+
+
+
+     <Button
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         app:layout_constraintTop_toBottomOf="@id/discraptionText"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         android:layout_marginTop="130dp"
+         android:id="@+id/buttonCart"
+         android:drawableEnd="@drawable/baseline_shopping_cart_24"
+         android:text="Add To cart"
+         android:textAllCaps="false"/>
+
+
+
+    <EditText
+        android:id="@+id/countity"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        app:layout_constraintTop_toBottomOf="@id/discraptionText"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="number"
+        android:layout_marginStart="24dp"
+        android:hint="Enter the countity"/>
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
